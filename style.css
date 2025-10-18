@@ -1,0 +1,883 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.main-container {
+    background: url('Image/Wallpaper1.png'); /* Corrected path with forward slashes */
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: width 0.2s ease-in-out; /* Smooth transition on size change */
+}
+
+/* Responsive Adjustments for Logo */
+@media (max-width: 768px) {
+    #logo img {
+        width: 120px; /* Adjust the width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #logo img {
+        width: 100px; /* Adjust the width for very small screens */
+    }
+}
+
+/* Other CSS code here */
+.logo{
+    width: 50%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7%;
+    align-items: center;
+}
+.header .navbar a{
+    font-size: 2.7rem;
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.header .navbar a:hover{
+    background: #ffc61a;
+    padding: .5rem 3rem;
+    border-radius: 15px;
+}
+#menu-bars{
+    color: white;
+    font-size: 2rem;
+    display: none;
+
+}
+.navbar.active{
+    top: 10%;
+}
+
+.background-text h2{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.background-text1 h2{
+    color: rgb(255, 47, 144);
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.background-text2 h1{
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    top: 78%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
+.background-text2 p{
+    color:orange;
+    font-size: 30px;
+    position: absolute;
+    top: 90%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+}
+.contactus{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-section{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.about-section h1{
+    color: rgb(233, 220, 41);
+}
+.about-section h3{
+    color: rgb(201, 41, 233);
+}
+.about-section p{
+    color:  rgb(233, 220, 41);
+}
+.background-text h2 span{
+    color: #ffc61a;
+}
+.taxi-image {
+    position: absolute; /* Positioning it relative to the nearest positioned ancestor */
+    top: 460px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 25%;
+    /* Optionally, add z-index to ensure it stays above other elements */
+    z-index: 10;
+}
+
+.taxi-image img{
+    width: 100%;
+    margin-top: 260px;
+}
+.taxi-image1 {
+    position: absolute; /* Positioning it relative to the nearest positioned ancestor */
+    top: 340px; /* Adjust as needed */
+    right: 660px; /* Adjust as needed */
+    width: 20%;
+    /* Optionally, add z-index to ensure it stays above other elements */
+    z-index: 10;
+}
+
+.taxi-image1 img{
+    width: 100%;
+    margin-top: 260px;
+}
+.taxi-image3 {
+    position: absolute;
+    top: 420px; 
+    right: 5px; 
+    width: 40%; 
+    z-index: 10;
+}
+.taxi-image5 {
+    position: absolute;
+    top: 630px; 
+    right: 5px; 
+    width: 100%; 
+    z-index: 10;
+}
+
+.home-container{
+    background: #ffc61a;
+    padding: 2rem 7%;
+    width: 100%;
+    padding-top: 4rem;
+    
+}
+.home-content{
+    padding-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+.inner-content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.inner-content h3{
+    font-size: 31px;
+}
+.inner-content h2{
+    font-size: 38px;
+}
+.inner-content p{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+.inner-content .booknow{
+    padding: 1rem 3rem;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+.inner-content .booknow:hover{
+padding: 1.5rem 3rem;
+border: 1px solid white;
+border-radius: 15px;
+background: white;
+}
+.form-heading{
+    text-align: center;
+    background: black;
+    padding: 2rem 0;
+}
+.form-heading h1{
+    color: white;
+}
+.contact-form{
+    width: 45rem;
+    background: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.form-fields input{
+    padding: 2rem ;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.contact-form a{
+    background: black;
+    width: 100%;
+    display: inline-block;
+    padding: 2rem 0;
+    color: white;
+    font-size: 1.5rem;
+    
+}
+.submit{
+    padding-top: 2rem;
+
+}
+.main-tariff{
+    padding: 3rem 7%;
+    height: 100vh;
+    
+   
+}
+.main-tariff h1{
+    font-size: 38px;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+.main-tariff h1 span{
+    color: #ffc61a;
+}
+.inner-tarrif{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.tarrif-container{
+    flex: 1 1 250px;
+    text-align: center;
+    padding: 6rem 0;
+}
+.tarrif-container img{
+    width: 60%;
+    margin-top: -50px;
+}
+.tarrif-container .inner-box h2{
+    font-size: 30px;
+}
+.tarrif-container .inner-box p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.tarrif-container .inner-box h3{
+    color: #ffc61a;
+    font-size: 2rem;
+}
+.tarrif-container .inner-box a{
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+
+}
+.tarrif-container:nth-child(1){
+    background: pink;
+}
+.tarrif-container:nth-child(2){
+    background: #ffc61a;
+}
+.tarrif-container:nth-child(3){
+    background: silver;
+}
+.heading-yellow{
+    color: black;
+}
+.yellw-section{
+    color: black !important;
+}
+.tarrif-container a{
+    color: white;
+    padding: 1rem 3rem;
+    background: black;
+    display: inline-block;
+    margin-top: 1rem;
+
+}
+.fast-booking{
+    /* background: url(Image/Suzuki_Swift_DZire.jpg); */
+    background-color: #da610a;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px; 
+}
+.fast-booking .fast-hading{
+    color: #ffc61a;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 2rem;
+}
+.fast-booking h1{
+    color: #ffc61a;
+    font-size: 38px;
+    text-align: center;
+}
+.fast-booking h2{
+    font-size: 31px;
+    color: white;
+    text-align: center;
+}
+.linear-fast {
+    display: flex;
+    justify-content: space-between; /* space items evenly */
+    align-items: center; /* vertically align */
+    gap: 20px; /* space between icons and text */
+    padding: 20px; /* optional padding */
+}
+
+.booking-content{
+    flex: 1 1 45rem;
+}
+.booking-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.inner-fast-text h1{
+    font-size: 28px;
+    color: #ffc61a;
+    padding: 2rem;
+}
+.inner-fast-text p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.inner-fast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 3rem 7%;
+    align-items: center;
+}
+.icon-fast{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #ffc61a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.icon-fast span i{
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+.booking-form {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: -220px;
+}
+.booking-form h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.booking-form input, .booking-form button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.booking-form input {
+    width: 300px;
+    max-width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.booking-form button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.testimonials {
+    background-color: #333; /* Dark background */
+    padding: 60px 20px;
+    text-align: center;
+    color: white; /* Make text readable on dark background */
+    margin-top: -60px;
+}
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffc61a;
+}
+.testimonial {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    text-align: left;
+}
+.testimonials{
+    /* background: url(images/testimonial\ back.png); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.testimonial p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#fff;
+}
+.testimonial h4 {
+    font-size: 20px;
+    margin: 0;
+    color: #ffc61a;
+}
+.testimonials .heading-test{
+    color: #ffc61a;
+    font-size: 38px;
+    padding: 2rem;
+    text-align: center;
+}
+.main-testimonials{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2rem 7%;
+}
+.inner-test{
+    flex: 1 1 45rem;
+    color: white;
+    background: black;
+    padding: 2rem;
+}
+.inner-test p{
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.clients{
+    display: flex;
+    align-items: center;
+
+}
+.clients h1{
+    color: #ffc61a;
+    margin-left: 1rem;
+}
+.background-text{
+    width:100%;
+    text-align: center;
+}
+
+
+#feedback {
+    margin: 20px;
+    padding: 20px;
+    background-color: #b1db1a;
+    border-radius: 8px;
+  }
+  
+  #feedback h1 {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  
+  #feedback label {
+    font-size: 25px;
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  #feedback input, #feedback textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #feedback button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #feedback button:hover {
+    background-color: #0056b3;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .image-container {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
+  .container {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* Adjust as needed */
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .background-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%; /* Adjust as needed */
+      height: auto;
+    }
+
+    .about-us {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .about-us h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .about-us p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .contact-details {
+        margin-top: 20px;
+      }
+      .contact-details p {
+        margin: 5px 0;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    #menu-bars{
+        display: initial;
+    
+    }
+    .navbar{
+        position: absolute;
+        top: -100%;
+        right: 0;
+        left: 0;
+        
+        
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        background: #ffc61a;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+    .header{
+        padding: 2rem;
+    }
+    .tarrif-container{
+        padding-bottom: 4rem;
+    }
+    .tarrif-container img{
+        width: 60%;
+        margin-top: 0px;
+    }
+    .background-text h2{
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+    }
+    .background-text h2 span{
+        color: #ffc61a;
+
+    }
+    .home-container{
+        background: #ffc61a;
+        padding: 2rem 7%;
+        width:100%;
+        padding-top: 4rem;
+    }
+    .home-content{
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .inner-content{
+        flex: 1 1 45rem;
+        padding: 2rem;
+    }
+    .inner-content h3{
+        font-size: 31px;
+    }
+    .inner-content h2{
+        font-size: 38px;
+    }
+    .inner-content p{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .inner-content .booknow{
+        padding: 1rem 3rem;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .inner-content .booknow:hover{
+        padding:1.5rem 3rem;
+        border: 1px solid white;
+        border-radius: 15px;
+        background: white;
+    }
+    .form-heading{
+        text-align: center;
+        background: black;
+        padding: 2rem 0;
+    }
+    .form-heading h1{
+        color:white;
+
+    }
+    .contact-form{
+        width: 45rem;
+        background: white;
+        text-align: center;
+        padding: 2rem 1;
+        margin: 0 auto;
+    }
+    .form-fields input{
+        padding: 2rem;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    .contact-form a{
+        background: black;
+        width: 100%;
+        display: inline-block;
+        padding-top: 2rem;
+        padding: 2rem 0;
+        color: white;
+        font-size: 1.5rem;
+    }
+    .submit{
+        padding-top: 2rem;
+    }
+    .main-tariff{
+        padding: 2rem 7%;
+    }
+    .main-tariff h1{
+        font-size: 38px;
+    }
+    .main-tariff h1 span{
+        color: #ffc61a;
+    }
+    .inner-tariff{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .tarrif-container{
+        flex:1 1 250px;
+        text-align: center;
+    }
+    .tarrif-container img{
+        width: 60%
+    }
+    .tarrif-container .inner-box h2{
+        font-size: 30px;
+    }
+    .tarrif-container .inner-box p{
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
+    .tarrif-container .inner-box h3{
+        color: #ffc61a;
+        font-size: 2rem;
+    }
+    .tarrif-container:nth-child(2){
+        background: #ffc61a;
+    }
+    .tarrif-container .inner-box a{
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+    }
+    .heading-yellow{
+        color: black;
+    }
+    .yellw-section{
+        color: black;
+    }
+    .tarrif-container img{
+        width: 60%;
+        margin-top: 0px;
+    }
+    body {
+        user-select: none;
+        -webkit-user-select: none; /* For Safari */
+        -moz-user-select: none;    /* For Firefox */
+    }
+    .container {
+        position: relative; /* This makes the container the reference point for absolute positioning */
+    }
+    
+    .background-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .overlay-image {
+        position: absolute; /* Positions the image relative to the container */
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        width: 100px; /* Adjust size */
+        height: auto;
+    }
+    .background-image {
+        position: relative; /* Or another positioning context */
+        z-index: 1; /* Background image */
+    }
+    
+    .overlay-image {
+        position: absolute;
+        z-index: 2; /* Overlay images should be above the background */
+    }
+    @media (max-width: 600px) {
+        .overlay-image {
+            width: 50px; /* Adjust size for small screens */
+            top: 5px;
+            left: 5px;
+        }
+    }
+    .overlay-image {
+        max-width: 100%; /* Ensure images fit within their container */
+        height: auto;
+    }
+    #feedback {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+#feedback h2 {
+  margin-bottom: 15px;
+}
+
+#feedback label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#feedback input, #feedback textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#feedback button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#feedback button:hover {
+  background-color: #0056b3;
+}
+
+.main-gallary {
+    background-color: #ffc61a; /* taxi yellow or any color you like */
+    min-height: 100vh; /* covers full screen */
+    padding: 20px;
+}
+.gallery {
+    background-color: #751414; /* light gray */
+    padding: 20px;
+}
+
+         
+    
+}
