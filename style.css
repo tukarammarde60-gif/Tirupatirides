@@ -906,5 +906,29 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
 }
 
 }
+@media screen and (max-width: 768px) {
+    /* Reduce header padding to make it shorter */
+    .header {
+        padding: 5px 10px;          /* Less top/bottom padding */
+        height: auto;                /* Let content determine height */
+    }
+
+    /* Make logo smaller but keep text readable */
+    .header #logo img {
+        width: 80px;                 /* Smaller logo width */
+        height: auto;
+    }
+
+    /* Navbar links: reduce spacing between them */
+    .header .navbar a {
+        padding: 5px 8px;            /* Less spacing between links */
+    }
+
+    /* Hamburger menu icon position and size */
+    #menu-bars {
+        font-size: 1.4rem;           /* Slightly smaller menu icon */
+    }
+}
+
 
 
