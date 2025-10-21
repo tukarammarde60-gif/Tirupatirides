@@ -906,6 +906,7 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
 }
 
 }
+
 @media screen and (max-width: 768px) {
     /* Reduce header padding to make it shorter */
     .header {
@@ -929,6 +930,57 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
         font-size: 1.4rem;           /* Slightly smaller menu icon */
     }
 }
+@media screen and (max-width: 768px) {
+    .hero-text {
+        margin-top: 0;           /* Remove default top margin */
+        padding-top: 0;          /* Remove top padding */
+        position: relative;
+        top: -100px;              /* Pull text up by 20px, adjust as needed */
+        text-align: center;      /* Keep text centered */
+    }
 
+    /* Optional: adjust spacing between headings */
+    .hero-text h1 {
+        margin-bottom: 5px;
+    }
 
+    .hero-text h2 {
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Move hero text up */
+    .hero-text {
+        margin-top: 0;        /* Remove top margin */
+        padding-top: 0;       /* Remove padding */
+        position: relative;
+        top: -20px;           /* Pull text upward, increase value if needed */
+        text-align: center;
+    }
+
+    /* Move booking form closer to hero text */
+    .booking-form {
+        margin-top: -15px;    /* Pull form upward */
+        padding: 10px 10px;   /* Optional: smaller padding */
+        width: 90%;           /* Fit mobile screen */
+        box-sizing: border-box;
+    }
+
+    /* Reduce spacing between input fields */
+    .booking-form input[type="text"],
+    .booking-form input[type="tel"],
+    .booking-form input[type="date"] {
+        margin-bottom: 8px;
+        padding: 8px 10px;
+        font-size: 0.95rem;
+    }
+
+    /* Adjust button size */
+    .booking-form button.booknow {
+        padding: 8px 12px;
+        font-size: 0.95rem;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
 
