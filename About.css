@@ -547,4 +547,72 @@ body {
     text-decoration: none;
 }
 
+/* ===== Unified Menu Button for All Screens ===== */
+
+/* Always show the menu icon */
+#menu-bars {
+  display: block;
+  font-size: 2rem;
+  color: #ffc107; /* gold */
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  z-index: 2000;
+}
+
+/* Hide default inline links on desktop (we’ll use dropdown) */
+.navbar {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px; /* below header */
+  right: 20px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.9); /* dark transparent */
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  padding: 8px 0;
+  z-index: 1500;
+  transition: all 0.3s ease;
+}
+
+/* Show when active */
+.navbar.active {
+  display: flex;
+  animation: fadeDown 0.3s ease forwards;
+}
+
+/* Simple fade animation */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Menu links */
+.navbar a {
+  display: block;
+  color: #fffc00;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.navbar a:last-child {
+  border-bottom: none;
+}
+
+.navbar a:hover {
+  background: #00ffea;
+  color: #000;
+  text-shadow: 0 0 6px #00ffea;
+  padding-left: 22px;
+}
+
+/* Close icon color */
+#menu-bars.fa-times {
+  color: #00ffea;
+}
 
