@@ -26,29 +26,49 @@
   <!-- Particle Container -->
   <div class="sparkles-container" id="sparkles"></div>
 
-  <!-- About Section -->
+ <!-- About Section -->
   <div class="about-section fade-in-up">
-<div class="about-card">
-    <h1>About Tirupati Tours and Travels</h1>
-    <p>
+    <div class="about-card">
+      <h1>About Tirupati Tours and Travels</h1>
+      <p>
         Welcome to <strong>Tirupati Tours and Travels</strong>! We provide reliable and comfortable taxi
         services for your local and outstation travel needs. Our goal is to make your
         journey smooth and enjoyable with professional drivers and well-maintained vehicles.
-    </p>
-    <h3>Why Choose Us?</h3>
-    <ul class="why-us">
+      </p>
+      <h3>Why Choose Us?</h3>
+      <ul class="why-us">
         <li class="fade-in-left"><i class="fas fa-clock"></i> 24/7 Service</li>
         <li class="fade-in-left"><i class="fas fa-wallet"></i> Affordable Tariffs</li>
         <li class="fade-in-left"><i class="fas fa-user-tie"></i> Experienced Drivers</li>
         <li class="fade-in-left"><i class="fas fa-car"></i> Clean and Comfortable Cars</li>
-    </ul>
-</div>
-
+      </ul>
+    </div>
   </div>
+
+  <!-- JavaScript for menu toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menu = document.querySelector('#menu-bars');
+      const navbar = document.querySelector('.navbar');
+
+      if (menu && navbar) {
+        menu.addEventListener('click', () => {
+          menu.classList.toggle('fa-times');
+          navbar.classList.toggle('active');
+        });
+
+        window.addEventListener('scroll', () => {
+          menu.classList.remove('fa-times');
+          navbar.classList.remove('active');
+        });
+      }
+    });
+  </script>
 
   <script src="../About.js"></script>
 </body>
 </html>
+
 
 
 
