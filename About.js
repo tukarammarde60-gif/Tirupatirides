@@ -1,4 +1,4 @@
-// Fade-in for text and list items
+// ===== Fade-in for text and list items =====
 const faders = document.querySelectorAll('.fade-in-up');
 const sliders = document.querySelectorAll('.fade-in-left');
 
@@ -7,11 +7,11 @@ const appearOptions = {
   rootMargin: "0px 0px -50px 0px"
 };
 
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     entry.target.classList.add('visible');
-    observer.unobserve(entry.target);
+    appearOnScroll.unobserve(entry.target);
   });
 }, appearOptions);
 
