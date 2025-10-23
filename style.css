@@ -1012,4 +1012,15 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
   background: #f44336;
 }
 
+/* ===== Responsive (Mobile Only) ===== */
+@media (max-width: 600px) {
+  .success-popup {
+    top: 20px;              /* slightly higher for small screens */
+    padding: 8px 15px;      /* smaller padding */
+    font-size: 13px;        /* smaller text */
+    border-radius: 8px;     /* smoother corners */
+    max-width: 85%;         /* fit within mobile width */
+  }
+}
+
 
