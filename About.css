@@ -12,7 +12,9 @@ html {
   font-size: 80.5%;
   overflow-y: scroll;
 }
-
+html, body {
+  overflow-x: hidden;
+}
 /* ===== Body & Background ===== */
 body {
   min-height: 100vh;
@@ -411,4 +413,5 @@ body {
         scroll-behavior: smooth;
     }
 }
+
 
