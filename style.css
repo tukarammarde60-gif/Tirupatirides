@@ -303,6 +303,18 @@ body {
   transition: transform 0.3s;
 }
 
+.inner-box_Img01 {
+  width: 66%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.inner-box_Img03 {
+  width: 85%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
 /* .inner-box img:hover {
   transform: scale(1.08) rotate(-2deg);
 } */
@@ -1040,3 +1052,59 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
   }
 }
 
+
+
+@media (max-width: 768px) {
+  .inner-tariff {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; /* spacing between cards */
+  }
+
+  .tariff-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* start from top */
+    align-items: center;
+    padding: 15px 10px;
+    min-height: auto;
+  }
+
+  .inner-box img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px; /* small gap below image */
+  }
+
+  .inner-box h2 {
+    font-size: 1.5rem;
+    margin: 5px 0; /* small top & bottom margin */
+  }
+
+  .inner-box p {
+    margin: 0 0 8px 0; /* remove extra space above paragraph */
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .inner-box .price {
+    font-size: 1.2rem;
+    margin: 4px 0 10px 0; /* smaller spacing */
+  }
+
+  .inner-box a {
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin-top: auto; /* button stays at bottom */
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+  }
+}
