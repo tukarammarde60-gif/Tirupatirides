@@ -8,7 +8,7 @@ menubar.addEventListener('click', () => {
 });
 
 // ===== Google Apps Script URL =====
-const url = 'https://script.google.com/macros/s/AKfycbyhmRPOSC2N1aEO20bPSdip0-U3j2I6MvzBiPFOITtbZw-TM_fU9-2x9IORjQlP1DxUvQ/exec';
+const url = 'https://script.google.com/macros/s/AKfycbzj76_pyTUeKfG7rhpovQC_ufvEEg9I65Css4FfsO2VB3bAubNKWqqJh1TMBZ2rhd_jtA/exec';
 
 // ===== Success Popup =====
 function showSuccessPopup(message) {
@@ -128,3 +128,4 @@ if (feedbackForm) {
   script.text = JSON.stringify(jsonLd);
   document.head.appendChild(script);
 })();
+
