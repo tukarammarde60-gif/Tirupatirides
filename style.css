@@ -1340,3 +1340,101 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
     transform: rotate(180deg); /* Point up when active */
 }
 
+/* ===== Mobile View: ≤768px ===== */
+@media screen and (max-width: 768px) {
+
+  /* ===== Our Services Section ===== */
+  .services-cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .service-card {
+      width: 95%;
+      padding: 15px 10px;
+      flex-direction: column;
+      text-align: center;
+      transform: none;             /* disable hover effects */
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+
+  .service-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+  }
+
+  .service-card p {
+      font-size: 1.2rem;
+  }
+
+  .service-card i {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      transform: none;
+  }
+
+  /* ===== FAQ Section ===== */
+  .faq-items {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+  }
+
+  .faq-item {
+      width: 95%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  }
+
+  .faq-item .faq-answer {
+      max-height: 0;
+      opacity: 0;
+      padding-top: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease, padding-top 0.3s ease;
+  }
+
+  .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 15px;
+  }
+
+  .faq-item h4::after {
+      content: '\25BC'; /* down arrow */
+      float: right;
+      transition: transform 0.3s ease;
+  }
+
+  .faq-item.active h4::after {
+      transform: rotate(180deg); /* up arrow when active */
+  }
+
+  /* ===== Feedback Form ===== */
+  .feedback-form {
+      width: 95%;
+      padding: 25px 15px;
+  }
+
+  .feedback-form h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+  }
+
+  .feedback-form input,
+  .feedback-form textarea,
+  .feedback-form select {
+      font-size: 1.2rem;
+      padding: 10px;
+      margin-bottom: 15px;
+  }
+
+  .feedback-form button {
+      font-size: 1.3rem;
+      padding: 12px 20px;
+      width: 100%;
+  }
+}
+
+
