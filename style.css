@@ -1401,12 +1401,6 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
       padding-top: 15px;
   }
 
-  .faq-item h4::after {
-      content: '\25BC'; /* down arrow */
-      float: right;
-      transition: transform 0.3s ease;
-  }
-
   .faq-item.active h4::after {
       transform: rotate(180deg); /* up arrow when active */
   }
@@ -1436,5 +1430,6 @@ body { background:#f0f2f5; color:#333; line-height:1.6; }
       width: 100%;
   }
 }
+
 
 
