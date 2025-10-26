@@ -158,17 +158,13 @@ html, body {
   list-style: none;
 }
 
-/* ===== Fade-in Animation ===== */
-.fade-in-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 1s ease-out;
+/* Fade animations disabled for instant visibility */
+.fade-in-up,
+.fade-in-left {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
-.fade-in-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
